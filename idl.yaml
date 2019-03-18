@@ -1,0 +1,2 @@
+depends:
+  - "platform/user/srv-session/session.proto"
