@@ -8,7 +8,6 @@ import (
 type (
 	RedisConfig struct {
 		Addr      string `yaml:"addr"`
-		Username  string `yaml:"username"`
 		Password  string `yaml:"password"`
 		MaxIdle   int    `yaml:"maxIdle"`
 		MaxActive int    `yaml:"maxActive"`
@@ -21,7 +20,7 @@ var (
 
 func Init() {
 	//加载Redis 配置
-	err := config.Get("Redis").Scan(&DefaultRedisConf)
+	err := config.Get("redis").Scan(&DefaultRedisConf)
 	if err != nil {
 		logrus.Fatalf("get Redis config error: %s", err)
 	}

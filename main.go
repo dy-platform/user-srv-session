@@ -22,6 +22,5 @@ func main() {
 	if err != nil {
 		logrus.Fatalf("RegisterPassportHandler error:%v", err)
 	}
-
 	micro.Run()
 }
