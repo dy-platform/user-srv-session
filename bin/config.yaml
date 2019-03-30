@@ -2,7 +2,7 @@ registry:
   address: 0.0.0.0:8500
 
 service:
-  name: platform-srv-session
+  name: platform.srv.session
   externalAddr: 0.0.0.0:8001
   listenAddr: 0.0.0.0:8002
   brokerAddr: 0.0.0.0:8003
